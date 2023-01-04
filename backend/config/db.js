@@ -6,6 +6,7 @@ const mongoose = require('mongoose')
 const connectDB = async()=>{
     try{
         mongoose.set("strictQuery", false);
+        // mongoose.set("useNewUrlParser", true);
         const conn = await mongoose.connect(process.env.MONGO_URI) //--> to connect to the database
 
         console.log(`MongoDB Connected: ${conn.connection.host}`);

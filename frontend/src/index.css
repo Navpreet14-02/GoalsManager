@@ -214,3 +214,10 @@ h3 {
     font-size: 1.5rem;
   }
 }
+
+
+@media (max-width: 500px) {
+  .goals{
+    grid-template-columns: 1fr;
+  }
+}
