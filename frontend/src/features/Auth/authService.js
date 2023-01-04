@@ -1,7 +1,7 @@
 // This file is strictly for just making the http request and sending the data back
 import axios from 'axios'
 
-const API_URL = '/api/users/'
+const API_URL = process.env.BACKEND_URL+'/api/users/'
 
 // Register user
 const register = async (userData)=>{
